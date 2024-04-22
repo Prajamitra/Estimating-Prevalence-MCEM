@@ -1,7 +1,7 @@
 
 rm(list=ls())
 
-Bootstrap_repli=5         # Number of bootstrap samples
+Bootstrap_repli=500         # Number of bootstrap samples
 
 
 
