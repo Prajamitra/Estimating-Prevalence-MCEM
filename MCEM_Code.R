@@ -1,7 +1,7 @@
 
 rm(list=ls())
 
-Bootstrap_repli=500          # Number of bootstrap samples
+Bootstrap_repli=5         # Number of bootstrap samples
 
 
 
@@ -246,7 +246,7 @@ for(s in 1:Bootstrap_repli){
 
 ### Bootstrap Data Generation ###########
 
-BS_data=rmultinom(1,Sim_N,prob=c(X111_data/Sim_N,X110_data/Sim_N,X101_data/Sim_N,X011_data/Sim_N,X100_data/Sim_N,X010_data/Sim_N,X001_data/Sim_N,(Sim_N-X0_data)/Sim_N))
+BS_data=rmultinom(1,round(R$par[1]),prob=c(X111_data/Sim_N,X110_data/Sim_N,X101_data/Sim_N,X011_data/Sim_N,X100_data/Sim_N,X010_data/Sim_N,X001_data/Sim_N,(Sim_N-X0_data)/Sim_N))
 X111=BS_data[1,1]
 X110=BS_data[2,1]
 X101=BS_data[3,1]
@@ -499,10 +499,6 @@ Sim_alpha1
 Sim_alpha2
 Sim_alpha3
 Sim_alpha4
-
-
-
-
 
 
 
