@@ -498,7 +498,7 @@ Sim_alpha4=R$par[5]
 Sim_alpha1 
 Sim_alpha2
 Sim_alpha3
-Sim_alpha
+Sim_alpha4
 
 
 
