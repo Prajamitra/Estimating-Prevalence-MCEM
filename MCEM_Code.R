@@ -219,8 +219,12 @@ n3=X110+y1001+y0101+y0001+y0002
 } # end of while
 
 
-
 Sim_N=round(R$par[1])
+Sim_alpha1=R$par[2]
+Sim_alpha2=R$par[3]
+Sim_alpha3=R$par[4]
+Sim_alpha4=R$par[5]
+
 
 
 ############# Bootstrap Analysis ##############
